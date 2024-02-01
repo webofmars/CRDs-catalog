@@ -1,0 +1,95 @@
+{
+  "properties": {
+    "status": {
+      "properties": {
+        "action": {
+          "nullable": true,
+          "type": "string"
+        },
+        "chart": {
+          "nullable": true,
+          "type": "string"
+        },
+        "command": {
+          "items": {
+            "nullable": true,
+            "type": "string"
+          },
+          "nullable": true,
+          "type": "array"
+        },
+        "conditions": {
+          "items": {
+            "properties": {
+              "lastTransitionTime": {
+                "nullable": true,
+                "type": "string"
+              },
+              "lastUpdateTime": {
+                "nullable": true,
+                "type": "string"
+              },
+              "message": {
+                "nullable": true,
+                "type": "string"
+              },
+              "reason": {
+                "nullable": true,
+                "type": "string"
+              },
+              "status": {
+                "nullable": true,
+                "type": "string"
+              },
+              "type": {
+                "nullable": true,
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          },
+          "nullable": true,
+          "type": "array"
+        },
+        "namespace": {
+          "nullable": true,
+          "type": "string"
+        },
+        "observedGeneration": {
+          "type": "integer"
+        },
+        "podCreated": {
+          "type": "boolean"
+        },
+        "podName": {
+          "nullable": true,
+          "type": "string"
+        },
+        "podNamespace": {
+          "nullable": true,
+          "type": "string"
+        },
+        "projectId": {
+          "nullable": true,
+          "type": "string"
+        },
+        "releaseName": {
+          "nullable": true,
+          "type": "string"
+        },
+        "token": {
+          "nullable": true,
+          "type": "string"
+        },
+        "version": {
+          "nullable": true,
+          "type": "string"
+        }
+      },
+      "type": "object",
+      "additionalProperties": false
+    }
+  },
+  "type": "object"
+}
